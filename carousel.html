@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>carousel</title>
+		<!-- 新 Bootstrap4 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" />
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="bootstrap-4.2.1/jquery/jquery.min.js"></script>
+		<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+		<script src="bootstrap-4.2.1/umd/popper.min.js"></script>
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+		<!-- width=device-width 表示宽度是设备屏幕的宽度。
+						initial-scale=1 表示初始的缩放比例。
+						shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<style>
+			/* Make the image fully responsive */
+			.carousel-inner img {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- 轮播图片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
+				</div>
+				<div class="carousel-item">
+					<img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
+				</div>
+				<div class="carousel-item">
+					<img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+				</div>
+			</div>
+
+			<!-- 左右切换按钮 -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+
+		</div>
+
+		<br />
+
+		<div id="demo1" class="carousel slide" data-ride="carousel">
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo1" data-slide-to="0" class="active"></li>
+				<li data-target="#demo1" data-slide-to="1"></li>
+				<li data-target="#demo1" data-slide-to="2"></li>
+			</ul>
+
+			<!-- 轮播图片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
+					<div class="carousel-caption">
+						<h3>第一张图片描述标题</h3>
+						<p>描述文字!</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
+					<div class="carousel-caption">
+						<h3>第二张图片描述标题</h3>
+						<p>描述文字!</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+					<div class="carousel-caption">
+						<h3>第三张图片描述标题</h3>
+						<p>描述文字!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 左右切换按钮 -->
+			<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo1" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+
+		</div>
+		<br />
+		<table class="table table-bordered table-hover table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>.carousel</td>
+					<td>创建一个轮播</td>
+				</tr>
+				<tr>
+					<td>.carousel-indicators</td>
+					<td>为轮播添加一个指示符，就是轮播图底下的一个个小点，轮播的过程可以显示目前是第几张图。</td>
+				</tr>
+				<tr>
+					<td>.carousel-inner</td>
+					<td>添加要切换的图片</td>
+				</tr>
+				<tr>
+					<td>.carousel-item</td>
+					<td>指定每个图片的内容</td>
+				</tr>
+				<tr>
+					<td>.carousel-control-prev</td>
+					<td>添加左侧的按钮，点击会返回上一张。</td>
+				</tr>
+				<tr>
+					<td>.carousel-control-next</td>
+					<td>添加右侧按钮，点击会切换到下一张。</td>
+				</tr>
+				<tr>
+					<td>.carousel-control-prev-icon</td>
+					<td>与 .carousel-control-prev 一起使用，设置左侧的按钮</td>
+				</tr>
+				<tr>
+					<td>.carousel-control-next-icon	</td>
+					<td>与 .carousel-control-next 一起使用，设置右侧的按钮</td>
+				</tr>
+				<tr>
+					<td>.slide</td>
+					<td>切换图片的过渡和动画效果，如果你不需要这样的效果，可以删除这个类。</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

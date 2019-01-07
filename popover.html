@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>popover</title>
+		<!-- 新 Bootstrap4 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" />
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="bootstrap-4.2.1/jquery/jquery.min.js"></script>
+		<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+		<script src="bootstrap-4.2.1/umd/popper.min.js"></script>
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+		<!-- width=device-width 表示宽度是设备屏幕的宽度。
+						initial-scale=1 表示初始的缩放比例。
+						shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body>
+		<div class="container">
+			<h3>弹出框实例</h3>
+			<p>如何创建弹出框</p>
+			<p>通过向元素添加 data-toggle="popover" 来来创建弹出框。</p>
+			<p>title 属性的内容为弹出框的标题，data-content 属性显示了弹出框的文本内容：</p>
+			<a href="#" data-toggle="popover" title="弹出框标题" data-content="弹出框内容">点我</a>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+
+		<br />
+		<br />
+		<div class="container">
+			<h3>弹出框实例-指定弹出位置</h3>
+			<p>默认情况下弹出框显示在元素右侧。</p>
+			<p>可以使用 data-placement 属性来设定弹出框显示的方向: top, bottom, left 或 right:</p>
+			<br><br><br><br><br><br>
+			<a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">点我</a>
+			<a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">点我</a>
+			<a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">点我</a>
+			<a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">点我</a>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+
+		<div class="container">
+			<h3>弹出框实例-关闭弹出框</h3> <br>
+			<a href="#" title="取消弹出框" data-toggle="popover" data-trigger="focus" data-content="点击文档的其他地方关闭我">点我</a>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+
+		<br /><br /><br /><br />
+		<div class="container">
+			<h3>弹出框实例-关闭弹出框</h3> <br>
+			<p>实现在鼠标移动到元素上显示，移除后消失的效果，可以使用 data-trigger 属性，并设置值为 "hover":</p>
+			<a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="一些内容">鼠标移动到我这</a>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+
+
+
+	</body>
+</html>

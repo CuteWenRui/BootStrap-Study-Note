@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>image_shape</title>
+		<meta charset="utf-8" />
+		<title>图片形状</title>
+		<!-- 新 Bootstrap4 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" />
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="bootstrap-4.2.1/jquery/jquery.min.js"></script>
+		<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+		<script src="bootstrap-4.2.1/umd/popper.min.js"></script>
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+
+		<!-- width=device-width 表示宽度是设备屏幕的宽度。
+			initial-scale=1 表示初始的缩放比例。
+			shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body>
+		<div class="container">
+			<h2>圆角图片</h2>
+			<p>.rounded 类可以让图片显示圆角效果：</p>
+			<img src="source/img1.jpg" class="rounded" alt="程序员壁纸" width="304" height="236">
+		</div>
+		<div class="container">
+			<h2>椭圆图片</h2>
+			<p>.rounded-circle 类可以设置椭圆形图片:</p>
+			<img src="source/img1.jpg" class="rounded-circle" alt="程序壁纸" width="304" height="236">
+		</div>
+		<div class="container">
+			<h2>缩略图</h2>
+			<p>.img-thumbnail 类用于设置图片缩略图(图片有边框):</p>
+			<img src="source/img1.jpg" class="img-thumbnail" alt="程序员壁纸" width="304" height="236">
+		</div>
+		<div class="container">
+			<h2>图片对齐方式</h2>
+			<p>使用 .float-left 类设置图片左对齐,使用 .float-right 类来设置图片右对齐</p>
+			<img src="source/img1.jpg" class="float-left" width="304" height="236">
+			<img src="source/img1.jpg" class="float-right" width="304" height="236">
+		</div>
+
+		<div class="container">
+			<img src="source/img1.jpg" class="img-fluid"">
+  <h2>响应式图片</h2>
+  <p>.img-fluid 类可以设置响应式图片，重置浏览器大小查看效果:</p>
+</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>grid</title>
+		<!-- 新 Bootstrap4 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" />
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="bootstrap-4.2.1/jquery/jquery.min.js"></script>
+		<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+		<script src="bootstrap-4.2.1/umd/popper.min.js"></script>
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+
+		<!-- width=device-width 表示宽度是设备屏幕的宽度。
+			initial-scale=1 表示初始的缩放比例。
+			shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+	<body>
+		<!-- 网格每一行需要
+				放在设置了 .container (固定宽度) 
+				或 .container-fluid (全屏宽度) 类的容器中，
+				这样就可以自动设置一些外边距与内边距。 -->
+		<div class="container">
+			<h4>创建相等宽度的列，Bootstrap 自动布局</h4>
+			<div class="row">
+				<div class="col" style="background-color:lavender;">.col</div>
+				<div class="col" style="background-color:orange;">.col</div>
+				<div class="col" style="background-color:lavender;">.col</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h4>等宽响应式列</h4>
+			<p> 在移动设备上，即屏幕宽度小于 576px 时，四个列将会上下堆叠排版。</p>
+			<div class="row">
+				<div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h4>不等宽响应式列</h4>
+			<p>在移动设备上，即屏幕宽度小于 576px 时，四个列将会上下堆叠排版。</p>
+			<div class="row">
+				<div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+				<div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+			</div>
+		</div>
+	</body>
+</html>
