@@ -35,4 +35,4 @@
 *   [多媒体对象](media-objects.html)
 *   [练手项目](makeawebsite.html)
 
-学习地址：[菜鸟教程][http://www.runoob.com/bootstrap4/bootstrap4-tutorial.html]
+学习地址：[菜鸟教程](http://www.runoob.com/bootstrap4/bootstrap4-tutorial.html)
