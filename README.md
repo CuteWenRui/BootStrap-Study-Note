@@ -31,3 +31,8 @@
 *   [滚动监听](scrollspy.html)
 *   [垂直滚动监听](scrollspy2.html)
 *   [小工具](utilities.html)
+*   [Flex](flex.html)
+*   [多媒体对象](media-objects.html)
+*   [练手项目](makeawebsite.html)
+
+学习地址：[菜鸟教程][http://www.runoob.com/bootstrap4/bootstrap4-tutorial.html]
